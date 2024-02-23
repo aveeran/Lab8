@@ -38,17 +38,17 @@ public class CustomListTest {
         assertEquals(list.getCount(), listSize + 1);
     }
 
-//    @Test
-//    public void hasCityTest() {
-//        list = MockCityList();
-//        City a = new City("test", "test1");
-//        list.addCity(a);
-//
-//        assertTrue(list.hasCity(a));
-//
-//        City b = new City("test2", "test3");
-//        assertFalse(list.hasCity(b));
-//    }
+    @Test
+    public void hasCityTest() {
+        list = MockCityList();
+        City a = new City("test", "test1");
+        list.addCity(a);
+
+        assertTrue(list.hasCity(a));
+
+        City b = new City("test2", "test3");
+        assertFalse(list.hasCity(b));
+    }
 
 
 }
