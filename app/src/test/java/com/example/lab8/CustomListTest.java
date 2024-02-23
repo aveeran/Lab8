@@ -64,21 +64,21 @@ public class CustomListTest {
         assertFalse(list.deleteCity(a));
     }
 
-//    @Test
-//    public void countCitiesTest() {
-//        list = MockCityList();
-//        City a = new City("test", "test1");
-//        assertEquals(1, list.countCities());
-//
-//        City b = new City("test2", "test3");
-//        assertEquals(2, list.countCities());
-//
-//        list.deleteCity(b);
-//        assertEquals(1, list.countCities());
-//
-//        list.deleteCity(a);
-//        assertEquals(0, list.countCities());
-//    }
+    @Test
+    public void countCitiesTest() {
+        list = MockCityList();
+        City a = new City("test", "test1");
+        assertEquals(1, list.countCities());
+
+        City b = new City("test2", "test3");
+        assertEquals(2, list.countCities());
+
+        list.deleteCity(b);
+        assertEquals(1, list.countCities());
+
+        list.deleteCity(a);
+        assertEquals(0, list.countCities());
+    }
 
 
 }
